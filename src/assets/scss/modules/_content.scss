@@ -1,0 +1,277 @@
+.main-wrap {
+  @include grid-row();
+  margin-top: 1rem;
+
+  @include breakpoint(medium) {
+    margin-top: 1rem;
+  }
+}
+
+.main-content {
+
+  // default 2 column
+  @include grid-column(12);
+  @include breakpoint(medium) {
+    @include grid-column(8);
+  }
+
+  .real-full-width.main-wrap & {
+    @include grid-column(12);
+  }
+  // 1 column
+  .full-width.main-wrap & {
+    //float:left!important;
+    h1.entry-title {
+      //text-align:center;
+      color:lighten($azul, 5%);
+    }
+    @include breakpoint(medium) {
+      @include grid-column(8);
+      @include grid-column-offset(2);
+    }
+  }
+
+  .fullest-width.main-wrap & {
+    @include breakpoint(medium) {
+      @include grid-column(12);
+    }
+  }
+
+  // 2 column sidebar left
+  .sidebar-left.main-wrap & {
+    @include breakpoint(medium) {
+      @include grid-column(8);
+      @include grid-col-pos(4);
+    }
+  }
+}
+
+.sidebar {
+
+  // default 2 column
+  @include grid-column(12);
+  @include breakpoint(medium) {
+    @include grid-column(4);
+    margin-top: 1rem;
+  }
+
+  // 2 column sidebar left
+  .sidebar-left.main-wrap & {
+    @include breakpoint(medium) {
+      @include grid-column(4);
+      @include grid-col-pos(-8);
+      margin-top: 1rem;
+    }
+  }
+}
+
+.info-entry {
+  clear:both;
+  font-size:14px;
+  color:#555;
+  margin:0;
+}
+
+article {
+  header {
+    @include breakpoint(large) {
+      margin-top:24px;
+    }
+    
+    h1.entry-title {
+      margin-bottom:16px;
+      color:lighten($azul, 5%);
+      font-size:2rem;
+      @include breakpoint(large) {
+        margin-bottom:32px;
+        font-size:2.8rem;
+      }
+    }
+
+    img {
+      margin-bottom:24px;
+    }
+  }
+
+  .entry-content {
+    h1, h2, h3, h4, h5 {
+      font-family: $body-font-family;
+    }
+    ul {
+      margin-left:2.25rem;
+    }
+  }
+}
+
+.post-info {
+  margin-top:24px;
+  padding:12px 0 0 0;
+  //background-color:transparentize(#F09C29, 0.9);
+  p {
+    margin-bottom:5px;
+    font-size:14px;
+    span {
+      text-transform:uppercase;
+      color:white;
+      display:inline-block;
+      width:130px;
+      line-height:18px;
+      background-color:$amarillo;
+      padding:3px 6px;
+      font-size:14px;
+    }
+    a {
+      background-color:$verde;
+      color:white;
+      padding:3px 6px;
+      margin-bottom:3px;
+      display:inline-block;
+      border-radius:3px;
+      &:hover {
+        background-color:lighten($verde, 10%);
+      }
+    }
+  }
+}
+
+.post-info-top {
+  font-size:14px;
+  //background-color:transparentize(#F09C29, 0.9);
+  padding:4px;
+  display:flex;
+  div.tax-items {
+    padding:0 12px 0 0;
+  }
+  a {
+    color:#EE9B29;
+  }
+}
+
+.google-map-custom {
+  margin-bottom:24px;
+}
+
+.address-info {
+  padding:12px;
+  font-style:normal;
+  p {
+    margin-bottom:0;
+  }
+  background-color:transparentize($amarillo, 0.9);
+  margin-bottom:24px;
+}
+
+h1.entry-title {
+  line-height:1.1em;
+}
+
+.page .entry-content,
+.single-post .entry-content,
+.single-evaluaciones .entry-content
+
+{
+  overflow:hidden;
+  @include breakpoint(medium down) {
+    overflow-x:scroll;
+  }
+  table {
+    border-spacing:0;
+    max-width:100%;
+    border-width:1px 1px 0 0;
+    border-style: solid;
+    border-color: #ccc;
+    tbody td {
+      padding:6px;
+    }
+      td {
+        border-left:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        vertical-align:middle;
+        text-align:center;
+        p {
+          margin-bottom:0;
+        }
+      }
+  }
+}
+
+.single-evaluaciones .entry-content table td,
+.single-evaluaciones .entry-content table th
+{
+  font-size:12px;
+}
+
+.printbutton {
+  font-size:18px;
+  border-radius:5px;
+  i {
+    font-size:16px;
+  }
+}
+
+.entry-content {
+  ol, ul {
+    margin-left:2.4rem;
+  }
+}
+
+.search-item {
+  h2 {
+    margin-bottom:0;
+  }
+  time {
+    font-size:14px;
+    color:#555;
+    margin-bottom:12px;
+    margin-bottom:6px;
+    display:block;
+  }
+}
+
+@page {
+
+}
+
+@media print {
+  footer {
+    display:none;
+  }
+
+  .single-evaluaciones .entry-content table tbody td {
+    padding:2px;
+    font-size:10px;
+  }
+
+  .main-content {
+    padding:0;
+    width:100%;
+    font-size:10px;
+    h1.entry-title {
+      //Debug
+      font-size:16px;
+      margin-bottom:12px;
+    }
+  }
+
+  .entry-content {
+    overflow:visible;
+    table {
+      page-break-inside: avoid;
+    
+      tbody td, th {
+        font-size:10px;
+      }
+      tr {
+        td {
+          padding:0;
+        }
+      }
+    }
+  }
+}
+
+.post-type-label {
+  text-transform:uppercase;
+  font-size:14px;
+  color: $verde;
+}

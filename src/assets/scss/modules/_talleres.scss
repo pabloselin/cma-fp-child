@@ -1,0 +1,132 @@
+//Talleres
+
+.custom_courses_selectboxes,
+.custom_courses_list
+ {
+    overflow:hidden;
+}
+
+.custom_courses_box {
+    position:relative;
+    //background-color:#333;
+    .container {
+        padding-top:0;
+    }
+
+    h2 {
+        margin-top:0;
+        padding:12px 36px 18px 36px;
+        max-width:300px;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:0 0 10px 10px;
+    }
+
+    .bgoverlay {
+        background-size:cover;
+        background-position:center;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        transition:opacity 1s linear;
+
+         &.bgoverlay-5 {
+             opacity:0.8;
+         }
+    }
+}
+
+.select-box {
+    width:30%;
+    margin-right:1%;
+    float:left;
+    @media screen and (max-width:640px) {
+        width:100%;
+    }
+    label {
+        display:block;
+        font-family:$header-font-family;
+        color:#333;
+        //font-weight:400;
+        font-size:18px;
+    }
+}
+
+.taller {
+    width:20%;
+    padding:3px;
+    margin:6px 0;
+    overflow:hidden;
+    color:#3F3D3D;
+    position: relative;
+    a {
+        color:#333;
+        &:hover {
+            .taller-wrap {
+                background-color:#ccc;       
+            }
+        }
+    }
+    @media screen and (max-width:640px) {
+        width:50%;
+    }
+    
+    span.academia-externa {
+        position:absolute;
+        bottom:12px;
+        right:9px;
+        padding:.2em .4em .3em;
+    }
+
+    .taller-wrap {
+        background-color:transparentize(#f0f0f0, 0.3);
+        border-radius:5px;
+        text-align:left;
+        padding:6px;
+        margin:0;
+        transition: all linear 0.3s;
+        }
+    p {
+        margin-bottom:0;
+        font-size:14px;
+    }
+    span.label.success {
+        font-size:13px;
+        font-weight:normal;
+        display:inline-block;
+        margin-right:3px;
+        background-color:#37BA9A;
+        color:white;
+    }
+    h1 {
+        font-size:18px;
+        margin-top:0;
+        margin-bottom:6px;
+        color:#274492;
+    }
+}
+
+.taller-metadata {
+    i {
+        color:#555;
+    }
+    span.label.warning {
+        background-color:white;
+        border:1px solid #ffae00;
+        color:darken(#ffae00, 30%);
+    }
+    span.horario-unit {
+        display:inline-block;
+        &.multiple:first-of-type {
+            &:after {
+                content: '|';
+                display:inline-block;
+                margin:0 3px 0 6px;
+                color:#555;
+            }
+        }
+    }
+}
