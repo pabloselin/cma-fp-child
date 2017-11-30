@@ -1,6 +1,6 @@
 <?php
 
-define('CMA_VERSION', '0.1.41');
+define('CMA_VERSION', '0.1.42');
 
 function foundationpress_scripts() {
 

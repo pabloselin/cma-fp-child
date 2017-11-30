@@ -337,8 +337,20 @@ ul.mobile-nav-right {
     border:0;
   } 
   li.is-dropdown-submenu-parent > a:after,
-  li.is-accordion-submenu-parent > a:after {
-    border-color:white;
+  li.is-accordion-submenu-parent > a:after,
+  li.opens-right > a:after,
+  li.opens-left > a:after {
+    border-color:#333 transparent transparent;
+  }
+}
+
+.menu-interno .desktop-menu {
+  .dropdown {
+    border-top:1px solid #ccc;
+    background-color:#f0f0f0;
+    a:hover {
+      background-color:#ccc;
+    }
   }
 }
 
