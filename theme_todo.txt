@@ -1,0 +1,8 @@
+TODO
+
+- Integrar gris con amarillo en cabecera
+	- Gris o amarillo suave de fondo en botonera
+- Mejorar noticias en el home
+- Sacar azul formulario de buscador
+- Añadir pie de página
+- Usar logo estándar

@@ -46,3 +46,5 @@ function browsersync_footer() {
 }
 
 add_action('wp_footer', 'browsersync_footer');
+
+include( STYLESHEETPATH . '/extras/class-footer-info-widget.php');
