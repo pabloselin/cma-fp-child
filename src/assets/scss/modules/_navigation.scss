@@ -111,7 +111,12 @@
 
 //Enlaces Rápidos
 .enlaces-rapidos {
-  background-color:$amarillo;
+  background-color:white;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  i {
+    color:#333;
+  }
   div.wrapper {
     max-width:75rem;
     margin-left:auto;
@@ -130,9 +135,9 @@
   }
 
   a {
-    color:white;
+    color:#333;
       &:hover {
-          background-color:darken($amarillo, 20%);
+          background-color:darken(#f1f1f1, 2%);
       }
   }
 }
@@ -143,7 +148,7 @@
   }
 
   .top-bar {
-    background-color:$dark-nav-color;
+    background-color:white;
     position: relative;
   }
 
@@ -165,17 +170,20 @@
         text-transform:none;
       }
     }
+    ul.is-dropdown-submenu {
+      border:1px solid #ccc;
+    }
     ul {
       //background-color:#223B7E;
       li ul {
-        background-color:darken($azul, 10%);
+        background-color:white;
         border:0;
       }
     }
       a {
-        color:rgba(255,255,255,0.9);
+        color:$dark-nav-color;
         &:hover {
-          color:white;
+          color:$dark-nav-color;
           background-color:$dropdown-menu-item-background-active;
         }
       }
@@ -184,7 +192,7 @@
 
 .site-title-bar.title-bar {
   background:white;
-  border-bottom:1px solid #223B7E;
+  border-bottom:$dark-nav-color;
   position: relative;
   .title-bar-title {
     //margin-left:40px;
@@ -194,7 +202,7 @@
     position: absolute;
     top:0;
     right:0;
-    background-color:$amarillo;
+    background-color:$azul;
     padding:24px 12px;
     font-size:24px;
     color:white;
@@ -204,7 +212,7 @@
 
 header.site-header {
   position: relative;
-  background:linear-gradient(to right,white 30%, $dark-nav-color 30%);
+  //background:linear-gradient(to right,white 30%, $dark-nav-color 30%);
   i {
     font-size:18px;
     vertical-align:middle;
@@ -215,7 +223,7 @@ header.site-header {
     top:105px;
     color:white;
     z-index:1;
-    color:lighten(#223680, 50%);
+    color:$azul;
     p {
       font-size:14px;
       vertical-align:middle;
@@ -223,7 +231,7 @@ header.site-header {
     }
     
     a {
-      color:lighten(#223680, 50%);
+      color:$azul;
     }
     @include show-for(large);
   }
@@ -287,9 +295,9 @@ ul.mobile-nav-right {
 
 ul.mobile-nav-right {
   //background-color:#223680;
-  color:white;
+  color:$dark-nav-color;
   a {
-    color:white;
+    color:$dark-nav-color;
     border-bottom:1px solid darken(#223680, 10%);
   }
   .menu.nested {
@@ -337,8 +345,20 @@ ul.mobile-nav-right {
     border:0;
   } 
   li.is-dropdown-submenu-parent > a:after,
-  li.is-accordion-submenu-parent > a:after {
-    border-color:white;
+  li.is-accordion-submenu-parent > a:after,
+  li.opens-right > a:after,
+  li.opens-left > a:after {
+    border-color:#333 transparent transparent;
+  }
+}
+
+.menu-interno .desktop-menu {
+  .dropdown {
+    border-top:1px solid #ccc;
+    background-color:#f0f0f0;
+    a:hover {
+      background-color:#ccc;
+    }
   }
 }
 
@@ -354,3 +374,7 @@ ul.mobile-nav-right {
     height:auto;
   }
 }
+
+@include breakpoint(small only) {
+      .title-bar-title img {max-width:100px;}
+    }
