@@ -21,8 +21,11 @@
 }
 
 .home .footer {
-    .widget {
-      margin-left:0;
-      margin-right:0;
-    }
+  .widget {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  article {
+    padding: 0;
+  }
 }

@@ -1,10 +1,11 @@
 {
   "name": "foundationpress",
   "title": "FoundationPress",
-  "version": "2.10.4",
-  "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
-  "homepage": "https://foundationpress.olefredrik.com",
   "license": "MIT",
+  "version": "2.10.4",
+  "description":
+    "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+  "homepage": "https://foundationpress.olefredrik.com",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -73,8 +74,6 @@
     "url": "https://github.com/olefredrik/foundationpress/issues"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   }
 }

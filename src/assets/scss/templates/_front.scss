@@ -33,6 +33,12 @@
         padding-left: 0 !important;
         h1 {
             color: white;
+            &:hover {
+                color: $amarillo;
+            }
+        }
+        span.date-item {
+            color: white;
         }
         @include breakpoint(medium down) {
             padding: 0;
