@@ -8,9 +8,13 @@
 }
 
 .agenda-metadata {
-    border: 1px solid #f2f2f2;
-    padding: 12px;
+    border: 0;
     i {
         color: $dark-nav-color;
     }
+}
+
+article.type-cms_agenda .agenda-metadata {
+    border: 1px solid #f2f2f2;
+    padding: 12px;
 }
