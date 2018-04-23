@@ -5,4 +5,4 @@ TODO
 - Mejorar noticias en el home
 - Sacar azul formulario de buscador
 - Añadir pie de página
-- Usar logo estándar
+- Usar logo estándar 
