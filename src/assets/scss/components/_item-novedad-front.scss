@@ -3,6 +3,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 24px;
+
+    @media only screen and (max-width: 40em) {
+        margin: 0 0 6px 0;
+    }
+
     .wrapimg {
         width: 100%;
         overflow: hidden;
@@ -13,14 +18,21 @@
         @include breakpoint(large) {
             height: 160px;
         }
+
+        @media only screen and (max-width: 40em) {
+            border: 0;
+            margin-bottom: 0;
+        }
     }
     span.date-item {
         color: #555;
-
         padding: 3px;
         display: inline-block;
         font-size: 11px;
         text-transform: uppercase;
+        @media only screen and (max-width: 40em) {
+            color: white;
+        }
     }
 }
 

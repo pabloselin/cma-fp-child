@@ -1,15 +1,16 @@
 .metadata-box {
-    margin-top:12px;
-    padding-top:12px;
-    border-top:1px solid #ccc;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
     p {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 }
 
 .agenda-metadata {
-    border:0;
+    border: 1px solid #f2f2f2;
+    padding: 12px;
     i {
-        color:$dark-nav-color;
+        color: $dark-nav-color;
     }
 }

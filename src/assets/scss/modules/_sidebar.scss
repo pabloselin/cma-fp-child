@@ -64,9 +64,12 @@
 .item-evento-sidebar {
     a {
         display: block;
-        border: 1px solid $links;
+        border: 1px solid #ccc;
         padding: 12px;
         margin-bottom: 12px;
+        &:hover {
+            border: 1px solid #555;
+        }
     }
     h1 {
         font-size: 1.4rem;

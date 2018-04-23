@@ -27,5 +27,8 @@
   }
   article {
     padding: 0;
+    @media only screen and (max-width: 40em) {
+      padding: 1rem;
+    }
   }
 }
