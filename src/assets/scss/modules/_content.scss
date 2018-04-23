@@ -117,6 +117,9 @@ article {
   p {
     margin-bottom: 5px;
     font-size: 14px;
+    @media screen and (min-width: 40em) {
+      font-size: 15px;
+    }
     span {
       text-transform: uppercase;
       color: white;
@@ -128,14 +131,14 @@ article {
       font-size: 14px;
     }
     a {
-      background-color: $verde;
-      color: white;
+      background-color: $amarillo;
+      color: $negro;
       padding: 3px 6px;
       margin-bottom: 3px;
       display: inline-block;
       border-radius: 3px;
       &:hover {
-        background-color: lighten($verde, 10%);
+        background-color: lighten($amarillo, 10%);
       }
     }
   }

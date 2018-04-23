@@ -15,7 +15,7 @@ function foundationpress_scripts() {
 
 		wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/e316494244.js', array(), '4.7.0', true );
 
-		wp_enqueue_style( 'cabin', 'https://fonts.googleapis.com/css?family=Cabin:400,700', array(), '', 'screen' );
+		wp_enqueue_style( 'cabin', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700', array(), '', 'screen' );
 
 		// Enqueue Founation scripts
 		wp_enqueue_script( 'foundation', get_bloginfo('template_url') . '/dist/assets/js/' . foundationpress_asset_path('app.js'), array( 'jquery' ), '2.10.4', true );
