@@ -28,7 +28,7 @@
   // submenu arrow
   .is-accordion-submenu-parent {
     > a::after {
-      border-color: $accordionmenu-arrow-color transparent transparent;
+      border-color: white transparent transparent;
     }
     &.active > a::after {
       border-color: $menu-item-color-active transparent transparent;
@@ -46,7 +46,7 @@
   // submenu arrow
   li.is-dropdown-submenu-parent {
     > a::after {
-      border-color: $accordionmenu-arrow-color transparent transparent;
+      border-color: white transparent transparent;
     }
     &.active > a::after {
       border-color: $menu-item-color-active transparent transparent;
@@ -223,14 +223,16 @@
     }
   }
   .nav-menu-icon {
-    height: 85px;
+    height: 83px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: $azul;
-    padding: 24px 12px;
-    font-size: 24px;
+    background-color: darken($azul, 3%);
+    padding: 18px 12px;
     color: white;
+    i {
+      font-size: 32px;
+    }
   }
 }
 
@@ -375,11 +377,11 @@ ul.mobile-nav-right {
 }
 
 .top-bar-right .mobile-menu ul {
-  background-color: #f4f4f4;
+  background-color: darken($azul, 3%);
   li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid darken($azul, 5%);
     ul.submenu {
-      background-color: darken(#f4f4f4, 5%);
+      background-color: darken($azul, 5%);
       margin: 0;
       padding-left: 1rem;
       li {
