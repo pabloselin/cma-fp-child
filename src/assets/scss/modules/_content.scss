@@ -126,19 +126,19 @@ article {
       display: inline-block;
       width: 130px;
       line-height: 18px;
-      background-color: $amarillo;
+      background-color: $azul;
       padding: 3px 6px;
       font-size: 14px;
     }
     a {
-      background-color: $amarillo;
-      color: $negro;
+      background-color: #d2e4ff;
+      color: $azul;
       padding: 3px 6px;
       margin-bottom: 3px;
       display: inline-block;
       border-radius: 3px;
       &:hover {
-        background-color: lighten($amarillo, 10%);
+        background-color: darken(#d2e4ff, 5%);
       }
     }
   }
