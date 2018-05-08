@@ -80,6 +80,7 @@ article {
       margin-bottom: 16px;
       color: $negro;
       font-size: 2rem;
+      font-weight: 700;
       @include breakpoint(large) {
         margin-bottom: 0;
         font-size: 2.8rem;
@@ -282,4 +283,8 @@ h1.entry-title {
   text-transform: uppercase;
   font-size: 14px;
   color: $verde;
+}
+
+.hidden {
+  display: none;
 }

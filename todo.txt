@@ -1,0 +1,5 @@
+TODO
+
+- Revisar historiales y funcionalidades mínimas de tema
+- Revisar pie de página para diferenciar de contenido central
+- Pasar a bold títulos single

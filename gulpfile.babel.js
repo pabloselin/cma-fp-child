@@ -135,33 +135,6 @@ let webpackConfig = {
     jquery: "jQuery"
   }
 };
-// Combine JavaScript into one file
-// In production, the file is minified
-function javascript() {
-  return gulp
-    .src(PATHS.entries)
-    .pipe(named())
-    .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe(
-      $.if(
-        PRODUCTION,
-        $.uglify().on("error", e => {
-          console.log(e);
-        })
-      )
-    )
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe($.if((REVISIONING && PRODUCTION) || (REVISIONING && DEV), $.rev()))
-    .pipe(gulp.dest(PATHS.dist + "/assets/js"))
-    .pipe(
-      $.if(
-        (REVISIONING && PRODUCTION) || (REVISIONING && DEV),
-        $.rev.manifest()
-      )
-    )
-    .pipe(gulp.dest(PATHS.dist + "/assets/js"));
-}
 
 // Copy images to the "dist" folder
 // In production, the images are compressed

@@ -2,6 +2,24 @@
 
 define('CMA_VERSION', '0.1.41');
 
+require_once( 'library/widget-areas.php' );
+require_once( 'library/entry-meta.php');
+
+/** Extras */
+require_once( 'library/custom-content.php');
+require_once( 'library/custom-field-utils.php');
+require_once( 'library/custom-widgets.php');
+require_once( 'library/fixes.php');
+require_once( 'library/menus.php');
+require_once( 'library/meta-boxes.php');
+require_once( 'library/hooks.php');
+require_once( 'library/utils.php');
+require_once( 'library/shortcodes.php');
+
+//Admin Settings
+require_once( 'library/admin/site-info.php');
+
+
 function foundationpress_scripts() {
 
 		// Enqueue the main Stylesheet.
