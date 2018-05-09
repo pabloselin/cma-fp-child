@@ -47,7 +47,7 @@ get_header(); ?>
 				if(get_post_type($post->ID) == 'post'):
 					get_template_part( 'template-parts/item-novedad-archive' );
 				elseif(get_post_type($post->ID) == 'cms_agenda'):
-					get_template_part( 'template-parts/item-evento-archive' );
+					get_template_part( 'template-parts/item-evento-archive-alt' );
 				else:
 					get_template_part( 'template-parts/item-default-archive' );
 				endif;	

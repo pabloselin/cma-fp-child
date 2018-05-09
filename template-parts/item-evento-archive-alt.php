@@ -1,4 +1,10 @@
-<article class="item-evento-archive">
+<article class="item-evento-archive media-object">
+    <div class="media-object-section">
+        <a class="block-link" href="<?php echo $novedad_data['id'];?>">
+            <i class="fa fa-calendar fa-4x"></i>
+        </a>
+    </div>
+    <div class="media-object-section">
         <div class="item-text-wrap">
         	<?php if(!is_post_type_archive( )):?>
             	<span class="ptype">Agenda</span>
@@ -11,4 +17,5 @@
             get_template_part('template-parts/agenda-metadata');
             ?>
         </div>
+    </div>
 </article>

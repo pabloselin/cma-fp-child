@@ -1,10 +1,13 @@
 .item-novedad-archive,
 .item-evento-archive {
     margin-bottom: 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ccc;
-    h3 {
+    padding: 6px;
+    background-color: #f0f0f0;
+    h3,
+    h4 {
         font-weight: 700;
+        line-height: 1.2em;
+        font-size: 22px;
     }
 }
 
@@ -34,4 +37,18 @@ h2.daterange-title {
     text-transform: uppercase;
     color: #f09c29;
     font-size: 1.4rem;
+}
+
+.item-evento-archive.media-object {
+    .media-object-section a.block-link {
+        display: block;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        background-color: $amarillo;
+        i {
+            color: white;
+            padding-top: 36px;
+        }
+    }
 }

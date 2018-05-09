@@ -67,7 +67,7 @@ function loadConfig() {
 }
 
 // Build the "dist" folder by running all of the below tasks
-gulp.task("build", gulp.series(clean, sass, images, copy));
+gulp.task("build", gulp.series(clean, sass, images, copy, javascript));
 
 // Build the site, run the server, and watch for file changes
 gulp.task("default", gulp.series("build", server, watch));
@@ -85,6 +85,12 @@ function clean(done) {
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + "/assets"));
+}
+
+function javascript() {
+  return gulp
+    .src("src/assets/js/*.js")
+    .pipe(gulp.dest(PATHS.dist + "/assets/js"));
 }
 
 // Compile Sass into CSS
@@ -214,6 +220,7 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
+  gulp.watch(PATHS.assets + "/js/*.js").on("all", javascript);
   gulp.watch("src/assets/scss/**/*.scss").on("all", sass);
   gulp.watch("**/*.php").on("all", browser.reload);
   gulp.watch("src/assets/js/**/*.js").on("all", gulp.series(browser.reload));

@@ -24,6 +24,8 @@ function foundationpress_scripts() {
 
 		// Enqueue the main Stylesheet.
 		wp_enqueue_style( 'main-stylesheet',  get_stylesheet_directory_uri() . '/dist/assets/css/' . foundationpress_asset_path('app.css'), array(), CMA_VERSION, 'all' );
+		//Enqueue custom javascript
+		wp_enqueue_script( 'custom-javascript', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path('cm.js'), array(), CMA_VERSION, 'all');
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );
