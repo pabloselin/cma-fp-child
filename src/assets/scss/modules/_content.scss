@@ -111,6 +111,13 @@ article {
   }
 }
 
+.entry-content a {
+  color: #1779ba;
+  &:hover {
+    border-bottom: 1px dotted #1779ba;
+  }
+}
+
 .post-info {
   margin-top: 24px;
   padding: 12px 0 0 0;
