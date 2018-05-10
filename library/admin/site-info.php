@@ -148,6 +148,14 @@ class cm_Admin {
 		) );
 
 		$cmb->add_field( array(
+			'name' => 'Twitter',
+			'desc' => 'URL de Página de Twitter',
+			'id'   => 'twtuser',
+			'type' => 'text',
+			'default' => 'http://',
+		) );
+
+		$cmb->add_field( array(
 			'name' => 'Youtube',
 			'desc' => 'URL de canal de Youtube',
 			'id'   => 'youtube_channel',

@@ -369,18 +369,24 @@ ul.mobile-nav-right {
   // }
 }
 
-.menu-interno .desktop-menu,
-.top-bar .top-bar-right ul.mobile-nav-left {
-  .is-dropdown-submenu,
-  .is-accordion-submenu {
-    background-color: white;
-    border: 0;
+.top-bar-title {
+  img {
+    padding: 0.5rem 1rem 1rem 0;
+    height: auto;
   }
-  li.is-dropdown-submenu-parent > a:after,
-  li.is-accordion-submenu-parent > a:after,
-  li.opens-right > a:after,
-  li.opens-left > a:after {
-    border-color: #333 transparent transparent;
+  .menu-interno .desktop-menu,
+  .top-bar .top-bar-right ul.mobile-nav-left {
+    .is-dropdown-submenu,
+    .is-accordion-submenu {
+      background-color: white;
+      border: 0;
+    }
+    li.is-dropdown-submenu-parent > a:after,
+    li.is-accordion-submenu-parent > a:after,
+    li.opens-right > a:after,
+    li.opens-left > a:after {
+      border-color: #333 transparent transparent;
+    }
   }
 }
 
