@@ -161,6 +161,9 @@ article {
 .main-content-full-width {
   max-width: 800px;
   margin: 0 auto;
+  .wp-post-image {
+    margin-bottom: 24px;
+  }
   h1.entry-title {
     margin-bottom: 24px;
   }
