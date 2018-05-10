@@ -223,11 +223,11 @@
     }
   }
   .nav-menu-icon {
-    height: 83px;
+    height: 82px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: darken($azul, 3%);
+    background-color: darken($azul, 10%);
     padding: 18px 12px;
     color: white;
     i {
@@ -403,7 +403,7 @@ ul.mobile-nav-right {
 .top-bar-right .mobile-menu ul {
   background-color: darken($azul, 3%);
   li {
-    border-bottom: 1px solid darken($azul, 5%);
+    border-bottom: 1px solid darken($azul, 15%);
     ul.submenu {
       background-color: darken($azul, 5%);
       margin: 0;
