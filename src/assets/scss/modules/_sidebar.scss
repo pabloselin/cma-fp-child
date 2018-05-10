@@ -69,17 +69,24 @@
         border: 1px solid #ccc;
         padding: 12px;
         margin-bottom: 12px;
-        color: #363636;
+        color: $negro;
+        transition: all ease-in 0.2s;
         &:hover {
-            border: 1px solid #555;
+            h1 {
+                color: $amarillo;
+            }
         }
     }
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     .agenda-metadata {
         margin-top: 0;
         padding-top: 0;
+        i {
+            color: $amarillo;
+        }
     }
 }

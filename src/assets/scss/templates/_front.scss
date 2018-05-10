@@ -156,6 +156,9 @@ a.bannerlink {
     @media only screen and (max-width: 40em) {
         padding: 0 12px;
     }
+    @media only screen and (min-width: 40em) {
+        margin-top: 24px;
+    }
 }
 
 .front-widgets .widget_media_image {
