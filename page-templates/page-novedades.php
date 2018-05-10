@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="columns medium-8 medium-offset-2">
 
 		<header class="archive-header">
-			<h1>Archivo de Noticias
+			<h1><?php the_title();?>
 			</h1>	
         </header>
     <?php 
