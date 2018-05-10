@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	console.log("cusstom js");
+	$("#smallSwitch").on("change", function() {
+		$(".eventos-anteriores").toggleClass("hidden");
+	});
 });
