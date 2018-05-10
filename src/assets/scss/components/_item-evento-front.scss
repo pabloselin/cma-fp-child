@@ -1,20 +1,19 @@
-    .widget-eventos-portada {
-        //display:flex;
-        .item-evento-front {
-            margin:0 0 12px 0;
-            padding:0;
-        }
+.widget-eventos-portada {
+    //display:flex;
+    .item-evento-front {
+        margin: 0 0 12px 0;
+        padding: 0;
     }
-
+}
 
 .item-evento-front {
-    border:1px solid #1779BA;
+    border: 1px solid #1779ba;
     a {
-        padding:12px;
+        padding: 12px;
     }
     .event-data {
         p {
-            margin-bottom:0;
+            margin-bottom: 0;
         }
     }
 }

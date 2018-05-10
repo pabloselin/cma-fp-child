@@ -15,6 +15,7 @@ require_once( 'library/meta-boxes.php');
 require_once( 'library/hooks.php');
 require_once( 'library/utils.php');
 require_once( 'library/shortcodes.php');
+require_once( 'library/theme-support.php');
 
 //Admin Settings
 require_once( 'library/admin/site-info.php');
