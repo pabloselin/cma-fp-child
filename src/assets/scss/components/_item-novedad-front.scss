@@ -1,37 +1,25 @@
 .item-novedad-front {
     position: relative;
+
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 0 24px;
-
-    @media only screen and (max-width: 40em) {
-        margin: 0 0 6px 0;
-    }
-
+    margin: 0 0 12px;
     .wrapimg {
         width: 100%;
         overflow: hidden;
-        border-bottom: 12px solid #f2f2f2;
+        background-color: #f0f0f0;
         position: relative;
         margin-bottom: 12px;
-
         @include breakpoint(large) {
-            height: 160px;
+            height: 170px;
         }
-
-        @media only screen and (max-width: 40em) {
-            border: 0;
-            margin-bottom: 0;
-        }
-    }
-    span.date-item {
-        color: #555;
-        padding: 3px;
-        display: inline-block;
-        font-size: 11px;
-        text-transform: uppercase;
-        @media only screen and (max-width: 40em) {
-            color: white;
+        span.date-item {
+            color: #333;
+            position: absolute;
+            background-color: $amarillo;
+            padding: 3px;
+            display: inline-block;
+            font-size: 12px;
         }
     }
 }

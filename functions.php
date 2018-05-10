@@ -1,6 +1,6 @@
 <?php
 
-define('CMA_VERSION', '0.1.41');
+define('CMA_VERSION', '0.1.42');
 
 require_once( 'library/widget-areas.php' );
 require_once( 'library/entry-meta.php');
